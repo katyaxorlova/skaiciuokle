@@ -61,7 +61,7 @@ int main() {
                 if (cin.fail() || score < 0 || score > 10) {
                     cin.clear(); // ištriname blogą įvestį
                     cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                    cout << "Homework score must be a valid number between 0 and 10. Try again: ";
+                    cout << "Namų darbų rezultatas turi būti tarp 1 ir 10. Bandykite dar kartą: ";
                     continue;
                 }
                 homework_scores.push_back(score);
@@ -70,7 +70,7 @@ int main() {
                 }
             }
             if (homework_scores.size() != names.size()) {
-                cout << "Bad input." << endl;
+                cout << "Bloga įvestis" << endl;
                 break;
             }
         }
@@ -91,7 +91,7 @@ int main() {
                 if (cin.fail() || exam_score < 0 || exam_score > 10) {
                     cin.clear(); //ištrinam blogą įvestį
                     cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                    cout << "Exam score must be a valid number between 0 and 10. Try again: ";
+                    cout << "Egzamino rezultatas turi būti tarp 1 ir 10. Bandykite dar kartą: ";
                     continue;
                 } else {
                     break;
